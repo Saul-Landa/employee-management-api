@@ -1,0 +1,137 @@
+{
+	"info": {
+		"_postman_id": "abe9fd73-2640-4bb7-b25a-445400ea06b7",
+		"name": "employee-api-2Brains",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "36500717"
+	},
+	"item": [
+		{
+			"name": "Employee-All",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/employees",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"employees"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Employee",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Test",
+						"value": "test",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8080/api/employees/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"employees",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Employee",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    {\r\n        \"firstName\": \"Saul\",\r\n        \"secondName\": \"Eduardo\",\r\n        \"paternalLastName\": \"Landa\",\r\n        \"maternalLastName\": \"Garcia\",\r\n        \"sex\": \"Male\",\r\n        \"dateBirth\": \"1999-01-20\",\r\n        \"position\": \"Developer\"\r\n    },\r\n        {\r\n        \"firstName\": \"Gustavo\",\r\n        \"secondName\": \"Joel\",\r\n        \"paternalLastName\": \"Luna\",\r\n        \"maternalLastName\": \"Landa\",\r\n        \"sex\": \"Male\",\r\n        \"dateBirth\": \"1995-01-20\",\r\n        \"position\": \"Designer\"\r\n    }\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/employees",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"employees"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Employee",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstName\": \"Saul\",\r\n    \"secondName\": \"Eduardo\",\r\n    \"paternalLastName\": \"Landa\",\r\n    \"maternalLastName\": \"Garcia\",\r\n    \"sex\": \"Male\",\r\n    \"dateBirth\": \"2000-01-20\",\r\n    \"position\": \"Developer\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/employees/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"employees",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Employee",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/employees/2",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"employees",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
